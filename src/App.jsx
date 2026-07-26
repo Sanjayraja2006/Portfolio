@@ -3,27 +3,82 @@ import "./App.css";
 const projects = [
   {
     number: "01",
-    title: "UBlood",
     category: "Web Application",
+    title: "UBlood",
     description:
       "A blood donation and request management platform designed to help users connect with blood donors during emergency situations.",
-    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "MongoDB",
+    ],
   },
+
   {
     number: "02",
-    title: "Heart Disease Prediction System",
     category: "Machine Learning",
+    title: "Heart Disease Prediction System",
     description:
       "A machine learning application that uses the Random Forest algorithm to predict the possibility of heart disease based on relevant input data.",
-    technologies: ["Python", "Machine Learning", "Random Forest"],
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Random Forest",
+    ],
   },
+
   {
     number: "03",
-    title: "Password Generator App",
     category: "Mobile Application",
+    title: "Password Generator App",
     description:
-      "A Flutter application designed to generate secure numeric passwords using device-specific inputs such as Device ID and Instance ID.",
-    technologies: ["Flutter", "Dart", "Mobile Development"],
+      "A secure password generator application developed using Flutter to generate secure numeric passwords using device-specific inputs.",
+    technologies: [
+      "Flutter",
+      "Dart",
+    ],
+  },
+
+  {
+    number: "04",
+    category: "Machine Learning",
+    title: "Student Performance Prediction System",
+    description:
+      "An end-to-end machine learning web application developed using Flask to predict students' final exam scores based on study hours, attendance, sleep duration, and previous academic performance. Implemented data preprocessing, feature scaling, model training, and evaluation using Linear Regression and Decision Tree Regression, selecting the best model using R², MAE, and MSE metrics.",
+    technologies: [
+      "Python",
+      "Flask",
+      "Scikit-Learn",
+      "Linear Regression",
+      "Decision Tree Regression",
+    ],
+  },
+
+  {
+    number: "05",
+    category: "Java Application",
+    title: "HR Management System using JDBC",
+    description:
+      "A Java-based HR Management System designed to streamline and automate human resource operations. The system provides a secure and user-friendly interface for HR personnel to perform CRUD operations for managing employee information.",
+    technologies: [
+      "Java",
+      "JDBC",
+      "MySQL",
+    ],
+  },
+
+  {
+    number: "06",
+    category: "Deep Learning",
+    title: "LSTM-Based Crime Prediction System",
+    description:
+      "A machine learning project that uses Long Short-Term Memory neural networks to forecast future crime patterns based on historical crime records. The system analyses factors such as crime location, crime type, and time to learn temporal trends and predict future crime patterns.",
+    technologies: [
+      "Python",
+      "LSTM",
+      "Deep Learning",
+    ],
   },
 ];
 
@@ -521,7 +576,7 @@ function App() {
             </a>
 
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/sanjayraja-e-bb9b67308"
               target="_blank"
               rel="noreferrer"
             >
@@ -533,7 +588,7 @@ function App() {
             </a>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/Sanjayraja2006"
               target="_blank"
               rel="noreferrer"
             >
