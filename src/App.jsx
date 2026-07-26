@@ -171,19 +171,12 @@ function App() {
 
             <div className="photo-glow"></div>
 
-            <div className="photo-card">
-
-              <img src="/profile.jpg" alt="Sanjayraja E"/>
-
-              <div className="photo-badge">
-                 <strong>CSE</strong>
-                 <span>Undergraduate</span>
-              </div>
-            </div>
-
-            <div className="photo-label">
-                <span>Specializing In</span>
-                <strong>UI/UX & Modern Web Development</strong>
+           <div className="photo-card">
+              <img 
+                 src="Profile.jpg" 
+                 alt="Sanjayraja E"
+                 className="profile-photo"
+              />
             </div>
 
           </div>
