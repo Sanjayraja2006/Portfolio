@@ -293,7 +293,7 @@ function App() {
 
 
         {/* PROJECTS */}
-<section id="projects" className="section projects-section">
+<section id="projects" className="projects-section">
 
   <div className="section-heading centered">
     <span>03 / SELECTED WORK</span>
