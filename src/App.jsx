@@ -293,69 +293,76 @@ function App() {
 
 
         {/* PROJECTS */}
-        <section id="projects" className="section projects-section">
+<section id="projects" className="section projects-section">
 
-          <div className="section-heading">
-            <span>03 / SELECTED WORK</span>
+  <div className="section-heading centered">
+    <span>03 / SELECTED WORK</span>
 
-            <h2>
-              Featured <em>Projects</em>
-            </h2>
+    <h2>
+      Projects that <em>showcase my skills.</em>
+    </h2>
 
-            <p>
-              A selection of projects that represent my experience
-              across web development, machine learning, and mobile
-              application development.
-            </p>
-          </div>
+    <p>
+      A collection of projects across web development,
+      machine learning, and mobile application development.
+    </p>
+  </div>
 
-          <div className="projects-list">
+  <div className="projects-grid">
 
-            {projects.map((project) => (
+    {projects.map((project) => (
 
-              <article className="project-card" key={project.number}>
+      <article className="project-card" key={project.number}>
 
-                <div className="project-number">
-                  {project.number}
-                </div>
+        {/* Project Number */}
+        <div className="project-top">
+          <span className="project-number">
+            {project.number}
+          </span>
 
-                <div className="project-content">
+          <span className="project-category">
+            {project.category}
+          </span>
+        </div>
 
-                  <span className="project-category">
-                    {project.category}
-                  </span>
+        {/* Project Content */}
+        <div className="project-content">
 
-                  <h3>{project.title}</h3>
+          <h3>{project.title}</h3>
 
-                  <p>{project.description}</p>
+          <p>
+            {project.description}
+          </p>
 
-                  <div className="project-tech">
-
-                    {project.technologies.map((tech) => (
-                      <span key={tech}>{tech}</span>
-                    ))}
-
-                  </div>
-
-                </div>
-
-                <a
-                  href="https://github.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-link"
-                >
-                  View Project ↗
-                </a>
-
-              </article>
-
+          {/* Technologies */}
+          <div className="project-tech">
+            {project.technologies.map((tech) => (
+              <span key={tech}>
+                {tech}
+              </span>
             ))}
-
           </div>
 
-        </section>
+        </div>
 
+        {/* Project Button */}
+        <a
+          href="https://github.com/Sanjayraja2006"
+          target="_blank"
+          rel="noreferrer"
+          className="project-link"
+        >
+          View Project
+          <span>↗</span>
+        </a>
+
+      </article>
+
+    ))}
+
+  </div>
+
+</section>
 
         {/* EXPERIENCE */}
         <section id="experience" className="section experience-section">
