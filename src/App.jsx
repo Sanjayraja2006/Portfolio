@@ -173,7 +173,7 @@ function App() {
 
            <div className="photo-card">
               <img 
-                 src="Profile.jpg" 
+                 src="Profile.jpeg" 
                  alt="Sanjayraja E"
                  className="profile-photo"
               />
