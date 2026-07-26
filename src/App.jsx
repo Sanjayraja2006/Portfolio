@@ -172,25 +172,18 @@ function App() {
             <div className="photo-glow"></div>
 
             <div className="photo-card">
-              <img
-                src="Profile.jpeg"
-                alt="Sanjayraja E"
-              />
 
-              <div className="photo-label">
-                <span>CS Undergraduate</span>
-                <strong>Building digital experiences</strong>
+              <img src="/profile.jpg" alt="Sanjayraja E"/>
+
+              <div className="photo-badge">
+                 <strong>CSE</strong>
+                 <span>Undergraduate</span>
               </div>
             </div>
 
-            <div className="floating-card top-card">
-              <strong>CSE</strong>
-              <span>Undergraduate</span>
-            </div>
-
-            <div className="floating-card bottom-card">
-              <span>Currently focused on</span>
-              <strong>Web Development</strong>
+            <div className="photo-label">
+                <span>Specializing In</span>
+                <strong>UI/UX & Modern Web Development</strong>
             </div>
 
           </div>
