@@ -16,6 +16,8 @@ body {
 }
 
 .portfolio {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
   background:
     radial-gradient(
@@ -28,8 +30,16 @@ body {
       rgba(37, 126, 255, 0.08),
       transparent 30%
     ),
-    var(--bg);
+    rgba(7, 11, 24, 0.85);
 }
+
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button,
+body.custom-cursor-active input {
+  cursor: none !important;
+}
+
 
 /* NAVBAR */
 
@@ -197,6 +207,31 @@ body {
   line-height: 1.3;
 }
 
+.typewriter-text {
+  background: linear-gradient(90deg, #5aa5ff, #a77cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  color: #7b6cff;
+  font-weight: 300;
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
 .hero-description {
   max-width: 650px;
   margin-top: 20px;
@@ -207,17 +242,143 @@ body {
 
 .hero-buttons {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 32px;
 }
 
 .primary-button,
-.secondary-button {
+.secondary-button,
+.outline-button {
   padding: 14px 22px;
   border-radius: 10px;
   font-weight: 600;
   transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
 }
+
+.primary-button {
+  background: linear-gradient(
+    135deg,
+    #6f65ff,
+    #9278ff
+  );
+  color: white;
+  border: none;
+}
+
+.secondary-button {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: white;
+}
+
+.outline-button {
+  border: 1px solid rgba(123, 108, 255, 0.4);
+  background: rgba(123, 108, 255, 0.1);
+  color: #a79cff;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.outline-button:hover {
+  transform: translateY(-3px);
+  border-color: rgba(123, 108, 255, 0.7);
+}
+
+/* RESUME MODAL */
+.resume-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(5, 8, 20, 0.85);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: modalFadeIn 0.25s ease-out;
+}
+
+.resume-modal-content {
+  width: min(920px, 95vw);
+  height: min(85vh, 820px);
+  background: #0d1326;
+  border: 1px solid rgba(123, 108, 255, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(123, 108, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.resume-modal-header {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(17, 24, 48, 0.95);
+}
+
+.resume-modal-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f5f7ff;
+}
+
+.resume-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.modal-download-btn {
+  padding: 9px 18px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.close-modal-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f5f7ff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.close-modal-btn:hover {
+  background: rgba(255, 70, 70, 0.8);
+  border-color: transparent;
+}
+
+.resume-modal-body {
+  flex: 1;
+  width: 100%;
+  background: #1a2238;
+}
+
+.resume-modal-body iframe {
+  border: none;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 
 .primary-button {
   background: linear-gradient(
