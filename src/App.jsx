@@ -4,6 +4,7 @@ import ParticleBackground from "./components/ParticleBackground";
 import CursorTrail from "./components/CursorTrail";
 import AnimatedSection, { AnimatedItem } from "./components/AnimatedSection";
 import TypewriterText from "./components/TypewriterText";
+import TiltPhotoCard from "./components/TiltPhotoCard";
 import "./App.css";
 
 const projects = [
@@ -179,13 +180,22 @@ function App() {
             <a href="#contact">Contact</a>
           </nav>
 
-          <button
-            onClick={() => setIsResumeOpen(true)}
-            className="nav-button"
-            style={{ cursor: "pointer", border: "none" }}
-          >
-            View Resume
-          </button>
+          <div className="navbar-actions">
+            <button
+              onClick={() => setIsResumeOpen(true)}
+              className="nav-button nav-button-outline"
+              style={{ cursor: "pointer" }}
+            >
+              View Resume
+            </button>
+            <a
+              href="/resume.pdf"
+              download="Sanjayraja_E_Resume.pdf"
+              className="nav-button"
+            >
+              Download CV ⬇
+            </a>
+          </div>
         </header>
 
         {/* HERO */}
@@ -233,14 +243,6 @@ function App() {
                   View Resume 👁
                 </button>
 
-                <a
-                  href="/resume.pdf"
-                  download="Sanjayraja_E_Resume.pdf"
-                  className="secondary-button"
-                >
-                  Download CV ⬇
-                </a>
-
                 <a href="#contact" className="secondary-button">
                   Contact Me
                 </a>
@@ -266,19 +268,9 @@ function App() {
 
             </motion.div>
 
-            {/* PHOTO WITH PARALLAX */}
+            {/* PHOTO WITH PARALLAX + 3D TILT */}
             <motion.div className="hero-photo-area" style={{ y: heroPhotoY }}>
-
-              <div className="photo-glow"></div>
-
-              <div className="photo-card">
-                <img 
-                   src="Profile.jpeg" 
-                   alt="Sanjayraja E"
-                   className="profile-photo"
-                />
-              </div>
-
+              <TiltPhotoCard />
             </motion.div>
           </AnimatedSection>
 
