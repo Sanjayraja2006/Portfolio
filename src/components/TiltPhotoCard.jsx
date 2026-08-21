@@ -99,7 +99,7 @@ export default function TiltPhotoCard() {
 
         {/* Tech Tags */}
         <div className="pc-tags">
-          {["Java", "Python", "React", "Node.js", "MongoDB", "Flutter"].map((t) => (
+          {["Java", "Python", "React", "Node.js", "MongoDB", "Flutter", "UI/UX"].map((t) => (
             <span key={t} className="pc-tag">{t}</span>
           ))}
         </div>
