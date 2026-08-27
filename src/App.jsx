@@ -221,7 +221,7 @@ function App() {
               <AnimatedItem>
                 <TypewriterText
                   staticPrefix="Computer Science Undergraduate &"
-                  words={["Frontend Developer", "UI/UX Designer"]}
+                  words={["Full-Stack Developer", "UI/UX Designer"]}
                 />
               </AnimatedItem>
 
