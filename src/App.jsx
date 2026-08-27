@@ -96,7 +96,7 @@ const skills = [
   },
   {
     title: "Frontend Development",
-    items: ["React.js", "HTML", "CSS"],
+    items: ["React.js", "HTML", "CSS", "Flutter"],
   },
   {
     title: "Backend Development",
@@ -108,7 +108,7 @@ const skills = [
   },
   {
     title: "Tools",
-    items: ["Git", "Postman", "MongoDB Compass"],
+    items: ["Git", "GitHub", "Postman", "MongoDB Compass", "AWS"],
   },
   {
     title: "Soft Skills",
@@ -138,6 +138,8 @@ const education = [
 ];
 
 const certifications = [
+  "Infosys Springboard - Introduction to Artificial Intelligence",
+  "CISCO - Networking Essentials",
   "MongoDB Atlas Certification",
   "NPTEL - Environmental Impact Assessment",
   "Python Bootcamp - Infosys Springboard",
@@ -228,7 +230,7 @@ function App() {
               <AnimatedItem className="hero-description">
                 I build modern, responsive web applications and intuitive
                 digital experiences with a strong interest in UI/UX design,
-                frontend development, and scalable web technologies.
+                Full-Stack development, and scalable web technologies.
               </AnimatedItem>
 
               <AnimatedItem className="hero-buttons">
@@ -291,7 +293,7 @@ function App() {
               <AnimatedItem className="about-text">
                 <p>
                   I am a Computer Science and Engineering undergraduate
-                  passionate about UI/UX design and frontend development.
+                  passionate about UI/UX design and Full-Stack development.
                   I enjoy designing interfaces that are visually appealing,
                   responsive, and easy to use.
                 </p>
