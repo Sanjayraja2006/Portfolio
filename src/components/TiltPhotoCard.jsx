@@ -74,7 +74,7 @@ export default function TiltPhotoCard() {
         <h3 className="pc-name">SANJAYRAJA E.</h3>
 
         {/* Role */}
-        <p className="pc-role">FRONTEND DEVELOPER</p>
+        <p className="pc-role">FULL-STACK DEVELOPER</p>
 
         {/* Divider */}
         <div className="pc-divider" />
@@ -92,7 +92,7 @@ export default function TiltPhotoCard() {
           </div>
           <div className="pc-stat-sep" />
           <div className="pc-stat">
-            <strong>3</strong>
+            <strong>5+</strong>
             <span>CERTS</span>
           </div>
         </div>
